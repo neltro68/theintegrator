@@ -1,12 +1,24 @@
 ﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{D0BEFE7A-0087-4AB0-BD80-0ECBE0C504CE}|Default">
   <MonoDevelop.Ide.ItemProperties.TheIntegratorAPI PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="TheIntegratorAPI/Controllers/SalesController.cs" Line="14" Column="1" />
+      <File FileName="TheIntegratorAPI/Startup.cs" Line="31" Column="10" />
+      <File FileName="TheIntegratorLib/Utilities/CSVReader.cs" Line="1" Column="1" />
+      <File FileName="TheIntegratorLib/Utilities/UserSalesCache.cs" Line="1" Column="1" />
+      <File FileName="TheIntegratorLib/Services/UserSalesService.cs" Line="16" Column="54" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="TheIntegrator" expanded="True" selected="True">
+          <Node name="TheIntegrator" expanded="True">
             <Node name="TheIntegratorAPI" expanded="True">
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True" selected="True" />
+              <Node name="Properties" expanded="True" />
+            </Node>
+            <Node name="TheIntegratorLib" expanded="True">
+              <Node name="Services" expanded="True" />
+              <Node name="Utilities" expanded="True" />
             </Node>
             <Node name="TheIntegratorLibTests" expanded="True" />
           </Node>

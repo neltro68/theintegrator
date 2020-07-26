@@ -17,7 +17,6 @@ namespace TheIntegratorLib.Services
     {
         private readonly ICSVReader _csvReader;
         private readonly IDataCache _userSalesCache;
-        private readonly List<UserSalesModel> _userSales = new List<UserSalesModel>();
 
         public UserSalesService(ICSVReader csvReader, IDataCache dataCache)
         {
