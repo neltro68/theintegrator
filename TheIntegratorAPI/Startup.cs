@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using TheIntegratorLib.Services;
+using TheIntegratorLib.Utilities;
 
 namespace TheIntegratorAPI
 {
@@ -28,6 +29,8 @@ namespace TheIntegratorAPI
         {
             services.AddControllers();
             services.AddTransient<IUserSalesService, UserSalesService>();
+            services.AddTransient<ICSVReader, CSVReader>();
+            services.AddTransient<IDataCache, UserSalesCache>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

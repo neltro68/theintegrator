@@ -27,13 +27,12 @@ namespace TheIntegratorLib.Utilities
     {
         private readonly IMemoryCache _cache;
         private const string _compositeKeySeparator = "|";
+
         public UserSalesCache()
         {
-
-        }
-        public UserSalesCache(IMemoryCache memoryCache)
-        {
-            _cache = memoryCache;
+            MemoryCacheOptions options = new MemoryCacheOptions();
+            IMemoryCache cache = new MemoryCache(options);
+            _cache = cache;
         }
 
         private object[] MergeKeys(DataCacheKey cacheKey, params object[] keys)
