@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 using TheIntegratorLib.Models;
 using TheIntegratorLib.Services;
@@ -16,10 +17,11 @@ namespace TheIntegratorAPI.Controllers
     {
         private readonly IUserSalesService _userSalesService;
         private readonly IDataCache _userSalesCache;
-        public SalesController(IUserSalesService userSalesService, IDataCache userSalesCache)
+        public SalesController(IUserSalesService userSalesService, IDataCache userSalesCache, IMemoryCache memoryCache)
         {
             _userSalesService = userSalesService;
             _userSalesCache = userSalesCache;
+            _userSalesCache.SetCache(memoryCache);
             _userSalesService.UseCache(_userSalesCache);
         }
 

@@ -22,17 +22,23 @@ namespace TheIntegratorLib.Utilities
         void Create(object value, DataCacheKey cacheKey, DataCacheDuration dataCacheDuration, params object[] keys);
         T Get<T>(DataCacheKey cacheKey, params object[] keys) where T : new();
         void Remove(DataCacheKey dataCacheKey, params object[] keys);
+        void SetCache(IMemoryCache memoryCache);
     }
     public class UserSalesCache : IDataCache
     {
-        private readonly IMemoryCache _cache;
+        private IMemoryCache _cache;
         private const string _compositeKeySeparator = "|";
 
         public UserSalesCache()
         {
-            MemoryCacheOptions options = new MemoryCacheOptions();
-            IMemoryCache cache = new MemoryCache(options);
-            _cache = cache;
+            //MemoryCacheOptions options = new MemoryCacheOptions();
+            //IMemoryCache cache = new MemoryCache(options);
+            //_cache = cache;
+        }
+
+        public void SetCache(IMemoryCache memoryCache)
+        {
+            _cache = memoryCache;
         }
 
         private object[] MergeKeys(DataCacheKey cacheKey, params object[] keys)

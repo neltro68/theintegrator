@@ -28,6 +28,7 @@ namespace TheIntegratorAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddMemoryCache();
             services.AddSwaggerGen();
             services.AddTransient<IUserSalesService, UserSalesService>();
             services.AddTransient<ICSVReader, CSVReader>();

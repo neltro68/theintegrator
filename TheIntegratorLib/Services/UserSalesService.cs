@@ -27,6 +27,9 @@ namespace TheIntegratorLib.Services
         public void UseCache(IDataCache userSalesCache)
         {
             _userSalesCache = userSalesCache;
+            Dictionary<int, string> headers = _userSalesCache.Get<Dictionary<int, string>>(DataCacheKey.Headers);
+            if (headers.Count > 0)
+                _csvReader.SetHeader(headers);
         }
 
         public List<UserSalesModel> GetSales(DateTime? fromDate, DateTime? toDate)
