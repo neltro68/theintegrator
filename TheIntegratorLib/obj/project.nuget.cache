@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "DybXeXpPUBRZ6J7loK9NIzi4LqOoJ0MocUFO0deX+BFGJLXBVMYbx+VkqH56WwZX1I0lK6BzLhPa82+C5h1CJQ==",
+  "success": true,
+  "projectFilePath": "/Users/renelcastro/Renel/Development/Github/theintegrator/TheIntegratorLib/TheIntegratorLib.csproj",
+  "expectedPackageFiles": [
+    "/Users/renelcastro/.nuget/packages/microsoft.extensions.caching.abstractions/3.1.6/microsoft.extensions.caching.abstractions.3.1.6.nupkg.sha512",
+    "/Users/renelcastro/.nuget/packages/microsoft.extensions.caching.memory/3.1.6/microsoft.extensions.caching.memory.3.1.6.nupkg.sha512",
+    "/Users/renelcastro/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/3.1.6/microsoft.extensions.dependencyinjection.abstractions.3.1.6.nupkg.sha512",
+    "/Users/renelcastro/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.6/microsoft.extensions.logging.abstractions.3.1.6.nupkg.sha512",
+    "/Users/renelcastro/.nuget/packages/microsoft.extensions.options/3.1.6/microsoft.extensions.options.3.1.6.nupkg.sha512",
+    "/Users/renelcastro/.nuget/packages/microsoft.extensions.primitives/3.1.6/microsoft.extensions.primitives.3.1.6.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{D0BEFE7A-0087-4AB0-BD80-0ECBE0C504CE}|Default">
+  <MonoDevelop.Ide.ItemProperties.TheIntegratorAPI PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TheIntegrator" expanded="True" selected="True" />
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="TheIntegrator" expanded="True" selected="True">
+            <Node name="TheIntegratorAPITests" expanded="True" />
+            <Node name="TheIntegratorLibTests" expanded="True">
+              <Node name="TheIntegratorLibTests" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

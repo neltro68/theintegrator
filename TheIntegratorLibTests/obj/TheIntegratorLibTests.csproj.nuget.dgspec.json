@@ -1,0 +1,148 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/renelcastro/Renel/Development/Github/theintegrator/TheIntegratorLibTests/TheIntegratorLibTests.csproj": {}
+  },
+  "projects": {
+    "/Users/renelcastro/Renel/Development/Github/theintegrator/TheIntegratorLib/TheIntegratorLib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/renelcastro/Renel/Development/Github/theintegrator/TheIntegratorLib/TheIntegratorLib.csproj",
+        "projectName": "TheIntegratorLib",
+        "projectPath": "/Users/renelcastro/Renel/Development/Github/theintegrator/TheIntegratorLib/TheIntegratorLib.csproj",
+        "packagesPath": "/Users/renelcastro/.nuget/packages/",
+        "outputPath": "/Users/renelcastro/Renel/Development/Github/theintegrator/TheIntegratorLib/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/renelcastro/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Extensions.Caching.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/renelcastro/Renel/Development/Github/theintegrator/TheIntegratorLibTests/TheIntegratorLibTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/renelcastro/Renel/Development/Github/theintegrator/TheIntegratorLibTests/TheIntegratorLibTests.csproj",
+        "projectName": "TheIntegratorLibTests",
+        "projectPath": "/Users/renelcastro/Renel/Development/Github/theintegrator/TheIntegratorLibTests/TheIntegratorLibTests.csproj",
+        "packagesPath": "/Users/renelcastro/.nuget/packages/",
+        "outputPath": "/Users/renelcastro/Renel/Development/Github/theintegrator/TheIntegratorLibTests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/renelcastro/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/renelcastro/Renel/Development/Github/theintegrator/TheIntegratorLib/TheIntegratorLib.csproj": {
+                "projectPath": "/Users/renelcastro/Renel/Development/Github/theintegrator/TheIntegratorLib/TheIntegratorLib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Microsoft.Extensions.Caching.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.302/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

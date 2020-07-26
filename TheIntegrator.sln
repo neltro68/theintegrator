@@ -1,0 +1,35 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheIntegratorAPI", "TheIntegratorAPI\TheIntegratorAPI.csproj", "{D0BEFE7A-0087-4AB0-BD80-0ECBE0C504CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheIntegratorLib", "TheIntegratorLib\TheIntegratorLib.csproj", "{18CBD58A-90E1-4BAE-876E-234C9DD17398}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheIntegratorLibTests", "TheIntegratorLibTests\TheIntegratorLibTests.csproj", "{32E009F8-B84A-40AE-812B-A4BFBEF7BB12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheIntegratorAPITests", "TheIntegratorAPITests\TheIntegratorAPITests.csproj", "{BA93CADE-1C4A-40E7-8E0E-D08202F0717C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0BEFE7A-0087-4AB0-BD80-0ECBE0C504CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0BEFE7A-0087-4AB0-BD80-0ECBE0C504CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0BEFE7A-0087-4AB0-BD80-0ECBE0C504CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0BEFE7A-0087-4AB0-BD80-0ECBE0C504CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18CBD58A-90E1-4BAE-876E-234C9DD17398}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18CBD58A-90E1-4BAE-876E-234C9DD17398}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18CBD58A-90E1-4BAE-876E-234C9DD17398}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18CBD58A-90E1-4BAE-876E-234C9DD17398}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32E009F8-B84A-40AE-812B-A4BFBEF7BB12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32E009F8-B84A-40AE-812B-A4BFBEF7BB12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32E009F8-B84A-40AE-812B-A4BFBEF7BB12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32E009F8-B84A-40AE-812B-A4BFBEF7BB12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA93CADE-1C4A-40E7-8E0E-D08202F0717C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA93CADE-1C4A-40E7-8E0E-D08202F0717C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA93CADE-1C4A-40E7-8E0E-D08202F0717C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA93CADE-1C4A-40E7-8E0E-D08202F0717C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
