@@ -33,6 +33,7 @@ namespace TheIntegratorAPI
             services.AddTransient<IUserSalesService, UserSalesService>();
             services.AddTransient<ICSVReader, CSVReader>();
             services.AddTransient<IDataCache, UserSalesCache>();
+            services.AddTransient<IFileService, FileService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

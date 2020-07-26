@@ -41,7 +41,7 @@ namespace TheIntegratorLib.Utilities
                 int index = 0;
                 foreach (PropertyInfo prop in props)
                 {
-                    if (prop.Name.ToLower() == header)
+                    if (prop.Name.ToLower() == header.ToLower().Trim())
                     {
                         _headers[index] = header;
                         break;
@@ -79,7 +79,7 @@ namespace TheIntegratorLib.Utilities
             {
                 foreach(PropertyInfo prop in props)
                 {
-                    if (prop.Name.ToLower() == _headers[i])
+                    if (prop.Name.ToLower() == _headers[i].ToLower().Trim())
                     {
                         if (prop.PropertyType == typeof(int))
                             prop.SetValue(userSales, Convert.ToInt32(cellValues[i]));

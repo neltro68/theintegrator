@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
@@ -16,29 +18,36 @@ namespace TheIntegratorAPI.Controllers
     public class SalesController : ControllerBase
     {
         private readonly IUserSalesService _userSalesService;
+        private readonly IFileService _fileService;
         private readonly IDataCache _userSalesCache;
-        public SalesController(IUserSalesService userSalesService, IDataCache userSalesCache, IMemoryCache memoryCache)
+        public SalesController(IUserSalesService userSalesService, IDataCache userSalesCache, IMemoryCache memoryCache, IFileService fileService)
         {
             _userSalesService = userSalesService;
             _userSalesCache = userSalesCache;
             _userSalesCache.SetCache(memoryCache);
             _userSalesService.UseCache(_userSalesCache);
+            _fileService = fileService;
+            _fileService.UseCache(_userSalesCache);
         }
 
-        [HttpGet]
-        [Route("record/{row}")]
-        public IActionResult Record([FromRoute] string row)
+        [HttpPost("record")]
+        public async Task<IActionResult> Record([FromForm(Name = "files")] List<IFormFile> files)
         {
-            _userSalesService.Record(row);
-            return Ok();
-        }
+            try
+            {
+                List<Stream> streamFiles = new List<Stream>();
+                foreach (IFormFile formFile in files)
+                {
+                    streamFiles.Add(formFile.OpenReadStream()); 
+                }                    
+                await _fileService.ProcessAsync(streamFiles, "temp", _userSalesService);
 
-        [HttpGet]
-        [Route("header/{row}")]
-        public IActionResult Header([FromRoute] string row)
-        {
-            _userSalesService.SetHeader(row);
-            return Ok();
+                return Ok();
+            }
+            catch (Exception exception)
+            {
+                return BadRequest($"Error: {exception.Message}");
+            }
         }
 
         [HttpGet]

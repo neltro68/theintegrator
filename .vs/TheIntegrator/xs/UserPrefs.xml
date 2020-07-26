@@ -1,12 +1,12 @@
 ﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{B11C5409-362F-4DFB-B217-AF1CE524F0A5}|Default">
   <MonoDevelop.Ide.ItemProperties.TheIntegratorAPI PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="TheIntegratorAPI/Controllers/SalesController.cs">
     <Files>
-      <File FileName="TheIntegratorAPI/Controllers/SalesController.cs" Line="27" Column="1" />
+      <File FileName="TheIntegratorAPI/Controllers/SalesController.cs" Line="34" Column="17" />
       <File FileName="TheIntegratorAPI/Startup.cs" Line="31" Column="39" />
       <File FileName="TheIntegratorLib/Utilities/CSVReader.cs" Line="73" Column="25" />
       <File FileName="TheIntegratorLib/Utilities/UserSalesCache.cs" Line="35" Column="34" />
-      <File FileName="TheIntegratorLib/Services/UserSalesService.cs" Line="64" Column="1" />
+      <File FileName="TheIntegratorLib/Services/UserSalesService.cs" Line="68" Column="14" />
       <File FileName="TheIntegratorAPI/appsettings.json" Line="1" Column="1" />
       <File FileName="TheIntegratorAPI/Properties/launchSettings.json" Line="23" Column="34" />
       <File FileName="TheIntegratorAPI/Program.cs" Line="16" Column="1" />
@@ -14,6 +14,8 @@
       <File FileName="TheIntegratorLibTests/CSVReaderTests.cs" Line="60" Column="68" />
       <File FileName="TheIntegratorLibTests/UserSalesCacheTests.cs" Line="37" Column="39" />
       <File FileName="TheIntegratorAPI/Dockerfile" Line="1" Column="1" />
+      <File FileName="TheIntegratorLib/Models/UserSalesModel.cs" Line="1" Column="1" />
+      <File FileName="TheIntegratorLib/Services/FileService.cs" Line="8" Column="45" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,7 +23,13 @@
           <Node name="TheIntegrator" expanded="True">
             <Node name="docker-compose" expanded="True" />
             <Node name="TheIntegratorAPI" expanded="True">
-              <Node name="Dockerfile" selected="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="SalesController.cs" selected="True" />
+              </Node>
+            </Node>
+            <Node name="TheIntegratorLib" expanded="True">
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True" />
             </Node>
             <Node name="TheIntegratorLibTests" expanded="True" />
           </Node>
