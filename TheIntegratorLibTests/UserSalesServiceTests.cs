@@ -16,10 +16,9 @@ namespace TheIntegratorLibTests
         public void UserSalesService_SetHeader_Record_GetSales(string row, string record)
         {
             ICSVReader csvReader = new CSVReader();
-            MemoryCacheOptions options = new MemoryCacheOptions();
-            IMemoryCache cache = new MemoryCache(options);
-            IDataCache dataCache = new UserSalesCache(cache);
-            IUserSalesService userSalesService = new UserSalesService(csvReader,dataCache);
+            IDataCache dataCache = new UserSalesCache();
+            IUserSalesService userSalesService = new UserSalesService(csvReader);
+            userSalesService.UseCache(dataCache);
 
             userSalesService.SetHeader(row);
             userSalesService.Record(record);

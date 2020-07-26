@@ -28,6 +28,7 @@ namespace TheIntegratorAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSwaggerGen();
             services.AddTransient<IUserSalesService, UserSalesService>();
             services.AddTransient<ICSVReader, CSVReader>();
             services.AddTransient<IDataCache, UserSalesCache>();
@@ -42,6 +43,12 @@ namespace TheIntegratorAPI
             }
 
             app.UseHttpsRedirection();
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "The Integrator API v1");
+            });
 
             app.UseRouting();
 

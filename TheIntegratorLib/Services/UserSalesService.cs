@@ -9,6 +9,7 @@ namespace TheIntegratorLib.Services
 {
     public interface IUserSalesService
     {
+        void UseCache(IDataCache userSalesCache);
         void Record(string row);
         void SetHeader(string record);
         List<UserSalesModel> GetSales(DateTime? fromDate, DateTime? toDate);
@@ -16,12 +17,16 @@ namespace TheIntegratorLib.Services
     public class UserSalesService : IUserSalesService
     {
         private readonly ICSVReader _csvReader;
-        private readonly IDataCache _userSalesCache;
+        private IDataCache _userSalesCache;
 
-        public UserSalesService(ICSVReader csvReader, IDataCache dataCache)
+        public UserSalesService(ICSVReader csvReader)
         {
             _csvReader = csvReader;
-            _userSalesCache = dataCache;
+        }
+
+        public void UseCache(IDataCache userSalesCache)
+        {
+            _userSalesCache = userSalesCache;
         }
 
         public List<UserSalesModel> GetSales(DateTime? fromDate, DateTime? toDate)

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using TheIntegratorLib.Models;
 using TheIntegratorLib.Services;
+using TheIntegratorLib.Utilities;
 
 namespace TheIntegratorAPI.Controllers
 {
@@ -14,13 +15,16 @@ namespace TheIntegratorAPI.Controllers
     public class SalesController : ControllerBase
     {
         private readonly IUserSalesService _userSalesService;
-        public SalesController(IUserSalesService userSalesService)
+        private readonly IDataCache _userSalesCache;
+        public SalesController(IUserSalesService userSalesService, IDataCache userSalesCache)
         {
             _userSalesService = userSalesService;
+            _userSalesCache = userSalesCache;
+            _userSalesService.UseCache(_userSalesCache);
         }
 
         [HttpGet]
-        [Route("recoard/{row}")]
+        [Route("record/{row}")]
         public IActionResult Record([FromRoute] string row)
         {
             _userSalesService.Record(row);

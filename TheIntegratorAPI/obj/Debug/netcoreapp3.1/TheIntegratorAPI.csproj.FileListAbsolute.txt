@@ -44,3 +44,8 @@
 /Users/renelcastro/Renel/Development/Github/theintegrator/TheIntegratorAPI/obj/Debug/netcoreapp3.1/TheIntegratorAPI.dll
 /Users/renelcastro/Renel/Development/Github/theintegrator/TheIntegratorAPI/obj/Debug/netcoreapp3.1/TheIntegratorAPI.pdb
 /Users/renelcastro/Renel/Development/Github/theintegrator/TheIntegratorAPI/obj/Debug/netcoreapp3.1/TheIntegratorAPI.genruntimeconfig.cache
+/Users/renelcastro/Renel/Development/Github/theintegrator/TheIntegratorAPI/bin/Debug/netcoreapp3.1/Microsoft.OpenApi.dll
+/Users/renelcastro/Renel/Development/Github/theintegrator/TheIntegratorAPI/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.Swagger.dll
+/Users/renelcastro/Renel/Development/Github/theintegrator/TheIntegratorAPI/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/renelcastro/Renel/Development/Github/theintegrator/TheIntegratorAPI/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/renelcastro/Renel/Development/Github/theintegrator/TheIntegratorAPI/obj/Debug/netcoreapp3.1/TheIntegratorAPI.MvcApplicationPartsAssemblyInfo.cs

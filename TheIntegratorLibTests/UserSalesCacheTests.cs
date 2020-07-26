@@ -12,9 +12,7 @@ namespace TheIntegratorLibTests
         [TestMethod]
         public void UserSalesCache_CreateThenGet_Test()
         {
-            MemoryCacheOptions options = new MemoryCacheOptions();
-            IMemoryCache cache = new MemoryCache(options);
-            IDataCache dataCache = new UserSalesCache(cache);
+            IDataCache dataCache = new UserSalesCache();
             IUserSales userSales = new UserSalesModel()
             {
                 User_Name = "Renel Castro",
@@ -30,9 +28,7 @@ namespace TheIntegratorLibTests
         [TestMethod]
         public void UserSalesCache_Remove_Test()
         {
-            MemoryCacheOptions options = new MemoryCacheOptions();
-            IMemoryCache cache = new MemoryCache(options);
-            IDataCache dataCache = new UserSalesCache(cache);
+            IDataCache dataCache = new UserSalesCache();
             IUserSales userSales = new UserSalesModel()
             {
                 User_Name = "Renel Castro",

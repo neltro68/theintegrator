@@ -1,15 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "2a2Z0lcFQqJi7ShpEZk2XBcngn+SzUXmO6FV7Uu9lMRhHa4I8PiEWxdwlgti+EoxHl/UkdN8UzokfAmDxCaLyg==",
+  "dgSpecHash": "vyM/tnTSTGfZpIH+Fx+fbLSTphzGtjxY8tHB2U79v9lqduiSJVR0CrYOUoXM5Rk0C6JCD4UBr2OqTXTxQ4g1aA==",
   "success": true,
   "projectFilePath": "/Users/renelcastro/Renel/Development/Github/theintegrator/TheIntegratorAPI/TheIntegratorAPI.csproj",
   "expectedPackageFiles": [
+    "/Users/renelcastro/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "/Users/renelcastro/.nuget/packages/microsoft.extensions.caching.abstractions/3.1.6/microsoft.extensions.caching.abstractions.3.1.6.nupkg.sha512",
     "/Users/renelcastro/.nuget/packages/microsoft.extensions.caching.memory/3.1.6/microsoft.extensions.caching.memory.3.1.6.nupkg.sha512",
     "/Users/renelcastro/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/3.1.6/microsoft.extensions.dependencyinjection.abstractions.3.1.6.nupkg.sha512",
     "/Users/renelcastro/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.6/microsoft.extensions.logging.abstractions.3.1.6.nupkg.sha512",
     "/Users/renelcastro/.nuget/packages/microsoft.extensions.options/3.1.6/microsoft.extensions.options.3.1.6.nupkg.sha512",
-    "/Users/renelcastro/.nuget/packages/microsoft.extensions.primitives/3.1.6/microsoft.extensions.primitives.3.1.6.nupkg.sha512"
+    "/Users/renelcastro/.nuget/packages/microsoft.extensions.primitives/3.1.6/microsoft.extensions.primitives.3.1.6.nupkg.sha512",
+    "/Users/renelcastro/.nuget/packages/microsoft.openapi/1.1.4/microsoft.openapi.1.1.4.nupkg.sha512",
+    "/Users/renelcastro/.nuget/packages/swashbuckle.aspnetcore/5.5.1/swashbuckle.aspnetcore.5.5.1.nupkg.sha512",
+    "/Users/renelcastro/.nuget/packages/swashbuckle.aspnetcore.swagger/5.5.1/swashbuckle.aspnetcore.swagger.5.5.1.nupkg.sha512",
+    "/Users/renelcastro/.nuget/packages/swashbuckle.aspnetcore.swaggergen/5.5.1/swashbuckle.aspnetcore.swaggergen.5.5.1.nupkg.sha512",
+    "/Users/renelcastro/.nuget/packages/swashbuckle.aspnetcore.swaggerui/5.5.1/swashbuckle.aspnetcore.swaggerui.5.5.1.nupkg.sha512"
   ],
   "logs": []
 }
