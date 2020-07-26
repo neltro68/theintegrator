@@ -1,8 +1,8 @@
-﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{D0BEFE7A-0087-4AB0-BD80-0ECBE0C504CE}|Default">
+﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{B11C5409-362F-4DFB-B217-AF1CE524F0A5}|Default">
   <MonoDevelop.Ide.ItemProperties.TheIntegratorAPI PreferredExecutionTarget="/Applications/Safari.app" />
   <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="TheIntegratorAPI/Controllers/SalesController.cs" Line="59" Column="1" />
+      <File FileName="TheIntegratorAPI/Controllers/SalesController.cs" Line="27" Column="1" />
       <File FileName="TheIntegratorAPI/Startup.cs" Line="31" Column="39" />
       <File FileName="TheIntegratorLib/Utilities/CSVReader.cs" Line="73" Column="25" />
       <File FileName="TheIntegratorLib/Utilities/UserSalesCache.cs" Line="35" Column="34" />
@@ -11,56 +11,34 @@
       <File FileName="TheIntegratorAPI/Properties/launchSettings.json" Line="23" Column="34" />
       <File FileName="TheIntegratorAPI/Program.cs" Line="16" Column="1" />
       <File FileName="TheIntegratorLibTests/UserSalesServiceTests.cs" Line="26" Column="45" />
-      <File FileName="TheIntegratorLibTests/CSVReaderTests.cs" Line="42" Column="77" />
+      <File FileName="TheIntegratorLibTests/CSVReaderTests.cs" Line="60" Column="68" />
       <File FileName="TheIntegratorLibTests/UserSalesCacheTests.cs" Line="37" Column="39" />
+      <File FileName="TheIntegratorAPI/Dockerfile" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TheIntegrator" expanded="True">
+            <Node name="docker-compose" expanded="True" />
             <Node name="TheIntegratorAPI" expanded="True">
-              <Node name="Controllers" expanded="True" />
+              <Node name="Dockerfile" selected="True" />
             </Node>
-            <Node name="TheIntegratorLib" expanded="True">
-              <Node name="Services" expanded="True" />
-              <Node name="Utilities" expanded="True" />
-            </Node>
-            <Node name="TheIntegratorLibTests" expanded="True">
-              <Node name="UserSalesServiceTests.cs" selected="True" />
-            </Node>
+            <Node name="TheIntegratorLibTests" expanded="True" />
           </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="TheIntegrator" expanded="True">
-            <Node name="TheIntegratorAPITests" expanded="True">
-              <Node name="TheIntegratorAPITests" expanded="True" />
-            </Node>
-            <Node name="TheIntegratorLibTests" expanded="True">
-              <Node name="TheIntegratorLibTests" expanded="True">
-                <Node name="UserSalesCacheTests" expanded="True" />
-                <Node name="UserSalesServiceTests" expanded="True">
-                  <Node name="UserSalesService_SetHeader_Record_GetSales" selected="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
+          <Node name="TheIntegrator" expanded="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/renelcastro/Renel/Development/Github/theintegrator/TheIntegratorAPI/Controllers/SalesController.cs" relfile="TheIntegratorAPI/Controllers/SalesController.cs" line="32" column="1" />
-      <Breakpoint file="/Users/renelcastro/Renel/Development/Github/theintegrator/TheIntegratorAPI/Controllers/SalesController.cs" relfile="TheIntegratorAPI/Controllers/SalesController.cs" line="40" column="1" />
-      <Breakpoint file="/Users/renelcastro/Renel/Development/Github/theintegrator/TheIntegratorAPI/Controllers/SalesController.cs" relfile="TheIntegratorAPI/Controllers/SalesController.cs" line="48" column="1" />
-      <Breakpoint file="/Users/renelcastro/Renel/Development/Github/theintegrator/TheIntegratorAPI/Controllers/SalesController.cs" relfile="TheIntegratorAPI/Controllers/SalesController.cs" line="59" column="1" />
-      <Breakpoint file="/Users/renelcastro/Renel/Development/Github/theintegrator/TheIntegratorAPI/Controllers/SalesController.cs" relfile="TheIntegratorAPI/Controllers/SalesController.cs" line="25" column="1" />
-      <Breakpoint file="/Users/renelcastro/Renel/Development/Github/theintegrator/TheIntegratorAPI/Controllers/SalesController.cs" relfile="TheIntegratorAPI/Controllers/SalesController.cs" line="41" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

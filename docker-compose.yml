@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  theintegratorapi:
+    image: ${DOCKER_REGISTRY-}theintegratorapi
+    build:
+      context: .
+      dockerfile: TheIntegratorAPI/Dockerfile
