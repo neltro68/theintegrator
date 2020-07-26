@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
-using Microsoft.Extensions.Logging;
 using TheIntegratorLib.Models;
 using TheIntegratorLib.Services;
 using TheIntegratorLib.Utilities;
@@ -14,7 +12,7 @@ using TheIntegratorLib.Utilities;
 namespace TheIntegratorAPI.Controllers
 {
     [ApiController]
-    [Route("[controller]/v1/api/")]
+    [Route("[controller]/api/v1/")]
     public class SalesController : ControllerBase
     {
         private readonly IUserSalesService _userSalesService;

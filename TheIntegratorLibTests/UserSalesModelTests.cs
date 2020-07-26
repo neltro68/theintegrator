@@ -2,11 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using Microsoft.Extensions.Caching.Memory;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TheIntegratorLib.Models;
-using TheIntegratorLib.Services;
-using TheIntegratorLib.Utilities;
 
 namespace TheIntegratorLibTests
 {
@@ -16,12 +13,13 @@ namespace TheIntegratorLibTests
         [TestMethod]
         public void ValidateUserSalesModel_Tests()
         {
-            var user = new UserSalesModel();
-
-            user.User_Name = "123456789012345678901234567890123456789012345678901";
-            user.Age = 91;
-            user.Height = 501;
-            user.Gender = "Z";
+            var user = new UserSalesModel
+            {
+                User_Name = "123456789012345678901234567890123456789012345678901",
+                Age = 91,
+                Height = 501,
+                Gender = "Z"
+            };
 
             IList<ValidationResult> validateResult = ValidateModel(user);
 
@@ -35,7 +33,7 @@ namespace TheIntegratorLibTests
         {
             var validationResults = new List<ValidationResult>();
             var ctx = new ValidationContext(model, null, null);
-            Validator.TryValidateObject(model, ctx, validationResults, true);
+            _ = Validator.TryValidateObject(model, ctx, validationResults, true);
             return validationResults;
         }
     }
