@@ -1,51 +1,42 @@
 ﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{B11C5409-362F-4DFB-B217-AF1CE524F0A5}|Default">
   <MonoDevelop.Ide.ItemProperties.TheIntegratorAPI PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../.nuget/packages/microsoft.net.test.sdk/16.5.0/build/netcoreapp2.1/Microsoft.NET.Test.Sdk.Program.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="TheIntegratorAPI/Controllers/SalesController.cs" Line="43" Column="43" />
-      <File FileName="TheIntegratorAPI/Startup.cs" />
-      <File FileName="TheIntegratorLib/Utilities/CSVReader.cs" Line="73" Column="57" />
+      <File FileName="TheIntegratorAPI/Controllers/SalesController.cs" Line="15" Column="32" />
+      <File FileName="TheIntegratorAPI/Startup.cs" Line="52" Column="83" />
+      <File FileName="TheIntegratorLib/Utilities/CSVReader.cs" />
       <File FileName="TheIntegratorLib/Utilities/UserSalesCache.cs" />
-      <File FileName="TheIntegratorLib/Services/UserSalesService.cs" Line="47" Column="1" />
-      <File FileName="TheIntegratorAPI/appsettings.json" />
-      <File FileName="TheIntegratorAPI/Properties/launchSettings.json" />
+      <File FileName="TheIntegratorLib/Services/UserSalesService.cs" />
+      <File FileName="TheIntegratorAPI/appsettings.json" Line="1" Column="1" />
+      <File FileName="TheIntegratorAPI/Properties/launchSettings.json" Line="23" Column="33" />
       <File FileName="TheIntegratorAPI/Program.cs" />
       <File FileName="TheIntegratorLibTests/UserSalesServiceTests.cs" />
-      <File FileName="TheIntegratorLibTests/CSVReaderTests.cs" Line="16" Column="17" />
+      <File FileName="TheIntegratorLibTests/CSVReaderTests.cs" />
       <File FileName="TheIntegratorLibTests/UserSalesCacheTests.cs" />
       <File FileName="TheIntegratorLib/Models/UserSalesModel.cs" />
-      <File FileName="TheIntegratorLib/Services/FileService.cs" Line="26" Column="56" />
-      <File FileName="../../../../../../Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/docker/MonoDevelop.Docker/MSbuild/Sdks/Microsoft.Docker.Sdk/build/Microsoft.VisualStudio.Docker.Compose.targets" Line="393" Column="7" />
-      <File FileName=".dockerignore" Line="1" Column="1" />
+      <File FileName="TheIntegratorLib/Services/FileService.cs" Line="21" Column="10" />
+      <File FileName="../../../../../../Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/docker/MonoDevelop.Docker/MSbuild/Sdks/Microsoft.Docker.Sdk/build/Microsoft.VisualStudio.Docker.Compose.targets" />
+      <File FileName=".dockerignore" />
       <File FileName="docker-compose.yml" Line="1" Column="1" />
-      <File FileName="TheIntegratorLibTests/UserSalesModelTests.cs" Line="40" Column="2" />
+      <File FileName="TheIntegratorLibTests/UserSalesModelTests.cs" />
       <File FileName="TheIntegratorAPI/Dockerfile" Line="1" Column="1" />
-      <File FileName="../../../../.nuget/packages/microsoft.net.test.sdk/16.5.0/build/netcoreapp2.1/Microsoft.NET.Test.Sdk.Program.cs" Line="2" Column="1" />
+      <File FileName="../../../../.nuget/packages/microsoft.net.test.sdk/16.5.0/build/netcoreapp2.1/Microsoft.NET.Test.Sdk.Program.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="TheIntegrator" expanded="True" selected="True">
+          <Node name="TheIntegrator" expanded="True">
             <Node name="docker-compose" expanded="True" />
-            <Node name="TheIntegratorAPI" expanded="True" />
+            <Node name="TheIntegratorAPI" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="SalesController.cs" selected="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+            </Node>
             <Node name="TheIntegratorLib" expanded="True">
               <Node name="Services" expanded="True" />
-              <Node name="Utilities" expanded="True" />
             </Node>
-            <Node name="TheIntegratorLibTests" expanded="True" />
           </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>prop.Name.ToLower() == header.ToLower()</Value>
-          <Value>prop.Name.ToLower()</Value>
-          <Value>header.ToLower()</Value>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="TheIntegrator" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>

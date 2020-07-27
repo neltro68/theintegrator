@@ -12,7 +12,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "sales/api/v1/report",
+      "launchUrl": "sales/v1/api/report",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -20,7 +20,7 @@
     "TheIntegratorAPI": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "sales/api/v1/report",
+      "launchUrl": "sales/v1/api/report",
       "applicationUrl": "https://localhost:5001;http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

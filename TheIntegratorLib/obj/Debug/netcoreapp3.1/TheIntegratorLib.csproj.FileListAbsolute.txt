@@ -15,4 +15,3 @@
 /Users/renelcastro/Renel/Development/Github/theintegrator/TheIntegratorLib/obj/Debug/netcoreapp3.1/TheIntegratorLib.csproj.CoreCompileInputs.cache
 /Users/renelcastro/Renel/Development/Github/theintegrator/TheIntegratorLib/obj/Debug/netcoreapp3.1/TheIntegratorLib.dll
 /Users/renelcastro/Renel/Development/Github/theintegrator/TheIntegratorLib/obj/Debug/netcoreapp3.1/TheIntegratorLib.pdb
-/Users/renelcastro/Renel/Development/Github/theintegrator/TheIntegratorLib/obj/Debug/netcoreapp3.1/TheIntegratorLib.csprojAssemblyReference.cache

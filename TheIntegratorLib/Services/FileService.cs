@@ -8,7 +8,7 @@ namespace TheIntegratorLib.Services
     public interface IFileService
     {
         void UseCache(IDataCache userSalesCache);
-        Task ProcessAsync(List<Stream> files, string path, IUserSalesService userSalesService);
+        Task ProcessAsync(List<Stream> files, IUserSalesService userSalesService);
     }
     public class FileService : IFileService
     {
@@ -17,12 +17,8 @@ namespace TheIntegratorLib.Services
         {
         }
 
-        public async Task ProcessAsync(List<Stream> files, string path, IUserSalesService userSalesService)
+        public async Task ProcessAsync(List<Stream> files, IUserSalesService userSalesService)
         {
-            var target = Path.Combine("path", "temp");
-            if (!Directory.Exists(target))
-                Directory.CreateDirectory(target);
-
             userSalesService.UseCache(_userSalesCache);
             foreach (Stream file in files)
             {

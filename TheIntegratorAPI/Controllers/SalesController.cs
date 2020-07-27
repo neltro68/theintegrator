@@ -12,7 +12,7 @@ using TheIntegratorLib.Utilities;
 namespace TheIntegratorAPI.Controllers
 {
     [ApiController]
-    [Route("[controller]/api/v1/")]
+    [Route("[controller]/v1/api/")]
     public class SalesController : ControllerBase
     {
         private readonly IUserSalesService _userSalesService;
@@ -38,7 +38,7 @@ namespace TheIntegratorAPI.Controllers
                 {
                     streamFiles.Add(formFile.OpenReadStream()); 
                 }                    
-                await _fileService.ProcessAsync(streamFiles, "temp", _userSalesService);
+                await _fileService.ProcessAsync(streamFiles, _userSalesService);
 
                 return Ok();
             }
@@ -58,7 +58,7 @@ namespace TheIntegratorAPI.Controllers
             {
                 dFromDate = parseFromDate;
             }
-            if (DateTime.TryParse(fromDate, out DateTime parseToDate))
+            if (DateTime.TryParse(toDate, out DateTime parseToDate))
             {
                 dToDate = parseToDate;
             }
