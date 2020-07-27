@@ -6,14 +6,19 @@ Requirements for this project : <br />
 https://dotnet.microsoft.com/download/dotnet-core/3.1 <br />
 https://docs.docker.com/desktop/
 
+Docker image for ASP.NET Core 2.1/3.1 Runtime :
+```
+docker pull mcr.microsoft.com/dotnet/core/aspnet
+```
+
 Post endpoint :
 ```
-/sales/api/v1/record
+/sales/v1/api/record
 ```
 
 Get endpoint :
 ```
-/sales/api/v1/report
+/sales/v1/api/report
 ```
 
 How to test API :
